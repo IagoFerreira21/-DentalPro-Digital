@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DentalPro Digital</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">DentalPro Digital</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+<section class="hero">
+   <h1>Transforme seu sorriso com excelência</h1>
+    <p>Especialistas em implantes e estética dental com tecnologia avançada.</p>
+      <p><strong>Agende sua avaliação ou fale conosco agora mesmo!</strong></p>
+ 
+      <!-- Botão Agendar Avaliação -->
+   <button onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+       Agendar Avaliação
+      </button>
+
+       <!-- Botão Falar no WhatsApp -->
+     <button onclick="window.open('https://wa.me/5547999890000','_blank')">
+      Falar no WhatsApp
+      </button>
+       
+      <!-- Pontos flutuantes -->
+   <div class="floating-points">
+     <span class="point" style="left:10%; animation-delay:0s;"></span>
+     <span class="point" style="left:30%; animation-delay:2s;"></span>
+     <span class="point" style="left:50%; animation-delay:4s;"></span>
+     <span class="point" style="left:70%; animation-delay:6s;"></span>
+     <span class="point" style="left:90%; animation-delay:8s;"></span>
+   </div>
+</section>
+
+
+  <!-- Diferenciais -->
+  <section id="diferenciais">
+    <h2>Diferenciais</h2>
+    <div class="icons">
+      <div>+20 anos de experiência</div>
+      <div>Tecnologia moderna</div>
+      <div>Atendimento humanizado</div>
+    </div>
+  </section>
+
+  <!-- Tratamentos -->
+<section id="tratamentos">
+  <h2>Tratamentos Principais</h2>
+  <div class="cards">
+
+    <!-- Card Lentes de Contato -->
+    <div class="card">
+      <h3>Lentes de Contato Dental</h3>
+      <p>Sorriso natural, branco e alinhado.</p>
+      <img src="img/Dentes Lentes De Contado.jpg" alt="Lentes de Contato Dental" width="100%">
+      
+      <!-- Botão Saiba Mais com toggle -->
+      <button onclick="
+        var info = document.getElementById('infoLentes');
+        info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+      ">
+        Saiba mais
+      </button>
+      <div id="infoLentes" style="display:none; margin-top:10px;">
+        <p>As lentes de contato dental são finas camadas de porcelana aplicadas sobre os dentes para corrigir cor, formato e alinhamento. O procedimento é rápido, indolor e proporciona um sorriso natural e harmônico.</p>
+      </div>
+
+      <!-- Botão Agendar -->
+      <button onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+        Agendar
+      </button>
+    </div>
+
+    <!-- Card Implantes Dentários -->
+    <div class="card">
+      <h3>Implantes Dentários</h3>
+      <p>Recupere função mastigatória e estética com técnicas avançadas.</p>
+      <img src="img/implante dental.jpg" alt="Implante Dentário" width="100%">
+      
+      <!-- Botão Saiba Mais com toggle -->
+      <button onclick="
+        var info = document.getElementById('infoImplantes');
+        info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+      ">
+        Saiba mais
+      </button>
+      <div id="infoImplantes" style="display:none; margin-top:10px;">
+        <p>Os implantes dentários são uma solução de longo prazo para substituir dentes ausentes. Com tecnologia avançada, garantimos segurança e resultados naturais.</p>
+      </div>
+
+      <!-- Botão Agendar -->
+      <button onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+        Agendar
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Equipe -->
+  <section id="equipe">
+    <h2>Nossa Equipe</h2>
+    <div class="cards">
+      <div class="card">Dr. Fernando Costa – Periodontia</div>
+      <div class="card">Dra. Juliana Santos – Estética</div>
+      <div class="card">Dr. Ricardo Almeida – Implantes</div>
+      <img src="img/doutores.jpg" alt="Equipe DentalPro" width="100%">
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <div class="cards">
+      <div class="card">⭐⭐⭐⭐⭐ "Excelente atendimento!" – Ana Paula</div>
+      <div class="card">⭐⭐⭐⭐⭐ "Equipe muito profissional." – Carlos Henrique</div>
+      <div class="card">⭐⭐⭐⭐⭐ "Transformaram meu sorriso." – Maria Eduarda</div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Entre em contato</h2>
+    <form id="formContato">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="mensagem"></div>
+    <p>WhatsApp: (47) 99989-0000 | Telefone: (47) 3368-0000</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 DentalPro Digital - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
