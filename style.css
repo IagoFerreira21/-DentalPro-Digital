@@ -28,7 +28,7 @@ nav a:hover { color: #00BFA6; } /* turquesa suave */
 .hero {
   position: relative;
   height: 100vh;
-  background: url('img/consultorio.jpg') center/cover no-repeat;
+  background: url('consultorio.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
